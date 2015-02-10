@@ -7,8 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container">
-<%= yield %>
-</div>
+	<%= render "layouts/header" %>
+	<div class="container">
+	<%= yield %> <!-- yield identifies a section where content from the view should be inserted -->
+	</div>
 </body>
 </html>
